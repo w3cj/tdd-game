@@ -1,0 +1,32 @@
+{
+  "name": "tdd-game",
+  "version": "1.0.0",
+  "description": "The Ultimate Tester and the Lazy Implementor",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.1.0",
+    "eslint-watch": "^2.1.13",
+    "mocha": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "example": "((npm -s run lint example/test.js example/implementation.js && echo \"No linter errors!\") || echo \"You have linter warnings/errors!\") && ((./node_modules/.bin/mocha example/test.js && echo \"All tests are passing!\") || echo \"You have failing tests!\")",
+    "game": "((npm -s run lint game/test.js game/implementation.js && echo \"No linter errors!\") || echo \"You have linter warnings/errors!\") && ((./node_modules/.bin/mocha game/test.js && echo \"All tests are passing!\") || echo \"You have failing tests!\")",
+    "lint": "./node_modules/.bin/esw --color",
+    "mocha": "./node_modules/.bin/mocha"
+  },
+  "author": "skuttleman@gmail.com",
+  "license": "MIT",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gSchool/tdd-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gSchool/tdd-game/issues"
+  },
+  "homepage": "https://github.com/gSchool/tdd-game#readme"
+}
