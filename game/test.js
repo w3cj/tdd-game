@@ -6,4 +6,8 @@ describe('TDD Game', function() {
   it('should return true if we are ready to have fun!', function() {
     expect(suite.connected()).to.equal(true);
   });
+
+  it('true should be true', function() {
+    expect(true).to.equal(false);
+  });
 });
