@@ -14,7 +14,8 @@
     "example": "((npm -s run lint example/test.js example/implementation.js && echo \"No linter errors!\") || echo \"You have linter warnings/errors!\") && ((./node_modules/.bin/mocha example/test.js && echo \"All tests are passing!\") || echo \"You have failing tests!\")",
     "game": "((npm -s run lint game/test.js game/implementation.js && echo \"No linter errors!\") || echo \"You have linter warnings/errors!\") && ((./node_modules/.bin/mocha game/test.js && echo \"All tests are passing!\") || echo \"You have failing tests!\")",
     "lint": "./node_modules/.bin/esw --color",
-    "mocha": "./node_modules/.bin/mocha"
+    "mocha": "./node_modules/.bin/mocha",
+    "test": "./node_modules/.bin/mocha game/test.js"
   },
   "author": "skuttleman@gmail.com",
   "license": "MIT",

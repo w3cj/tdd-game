@@ -1,4 +1,4 @@
 language: node_js
 node_js: 6.2.2
 install: npm install
-script: npm run game
+script: npm run test
